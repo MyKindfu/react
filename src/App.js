@@ -1,6 +1,12 @@
 import './App.css';
-import Gallery, { Profile, Spreat } from './pages/practice/practice';
+import Gallery, {
+  Profile,
+  Spreat,
+  PackingList,
+  List,
+} from './pages/practice/practice';
 
+import { ex1, people } from './mock/index';
 function App() {
   const a = '阅读中华上下五千年';
   const b = '爱迪生的无聊';
@@ -12,6 +18,7 @@ function App() {
     size: 100,
     extra: 11,
   };
+
   return (
     <div className="App">
       <div className="body">
@@ -23,6 +30,12 @@ function App() {
 
         <h4 className="List-title">展开语法传递props</h4>
         <Spreat {...data} />
+
+        <h4 className="List-title">条件渲染</h4>
+        <PackingList data={ex1} />
+
+        <h4 className="List-title">渲染list</h4>
+        <List data={people} />
       </div>
     </div>
   );
