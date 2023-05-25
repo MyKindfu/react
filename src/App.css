@@ -1,6 +1,19 @@
-.body {
+.App {
+  display: flex;
+}
+.left,
+.right {
   width: 50%;
   padding: 10px;
+  background-color: rgb(239, 235, 198);
+}
+
+.right {
+  background-color: rgb(60, 235, 235);
+}
+
+h2 {
+  color: brown;
 }
 
 .List-title {
